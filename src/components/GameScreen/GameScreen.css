@@ -1,0 +1,10 @@
+.focus {
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.menubar {
+    height: 10vh;
+    background-color: seagreen;
+}
