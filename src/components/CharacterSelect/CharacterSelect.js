@@ -7,7 +7,7 @@ export default class CharacterSelect extends React.Component {
         portrait: null,
         modal: 'hidden-confirm',
         selected: null,
-        questions: ['Are you cool?', 'Are you sneaky?'],
+        questions: [{text: 'Are you cool?', option1: 'Yes', option1value: 'Cool', option2: 'No', option2value: 'Lame'}, {text: 'Are you sneaky?', option1: 'Yellow', option1value: 'Sweet', option2: 'Brown', option2value: 'Sour'}],
         index: 0,
         name: '',
         formName: '',
@@ -62,19 +62,19 @@ export default class CharacterSelect extends React.Component {
                     <p
                         className='question-text'
                     >
-                        {question}
+                        {question.text}
                     </p>
                     <button
                         className='question-button'
                         onClick={this.handleAdvanceQuestion}
                     >
-                        Option
+                        {question.option1}
                     </button>
                     <button
                         className='question-button'
                         onClick={this.handleAdvanceQuestion}
                     >
-                        Option
+                        {question.option2}
                     </button>
                 </div>
             );
