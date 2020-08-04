@@ -1,0 +1,27 @@
+.landing {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    background-color: royalblue;
+    min-width: 280px;
+    min-height: 360px;
+    margin: 4px;
+}
+
+.credits {
+    background-color: saddlebrown;
+    min-height: 80px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.landing-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100px;
+}

@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './CharacterSelect.css';
 
 //get an update character passed from app
-class CharacterSelect extends React.Component {
+export default class CharacterSelect extends React.Component {
     state = {
         firstChar: 'small',
         secondChar: 'small',
@@ -141,8 +141,6 @@ class CharacterSelect extends React.Component {
                     </div>
                 </div>
             </div>
-        )
-    }
-}
-
-export default CharacterSelect;
+        );
+    };
+};

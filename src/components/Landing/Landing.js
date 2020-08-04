@@ -1,25 +1,41 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Landing.css';
 
-class Landing extends React.Component {
+export default class Landing extends React.Component {
 
     render() {
         return(
-            <div>
-                <p>
-                    Here is some text that will introduce the plot
-                </p>
-                <Link
-                    to={'/characterselect'}
+            <section
+                className='landing'
+            >
+                <div
+                    className='logo'
                 >
-                    <button>
-                        Choose your character
+                    Logo placeholder
+                </div>
+                <div
+                    className='credits'
+                >
+                    Credits placeholder
+                </div>
+                <div
+                    className='landing-buttons'
+                >
+                    <button
+                        className='new-game-button'
+                    >
+                        New Game
                     </button>
-                </Link>
-            </div>
-        )
-    }
-}
-
-export default Landing;
+                    <Link>
+                        <button
+                            className='continue-button'
+                        >
+                            Continue
+                        </button>
+                    </Link>
+                </div>
+            </section>
+        );
+    };
+};

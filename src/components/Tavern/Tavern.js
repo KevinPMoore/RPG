@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import FocusImage from '../FocusImage/FocusImage';
 import FocusText from '../FocusText/FocusText';
 import Menu from '../Menu/Menu';
-import './GameScreen.css';
+import './Tavern.css';
 
-class GameScreen extends React.Component {
+export default class Tavern extends React.Component {
  state = {
 
  }
@@ -26,5 +26,3 @@ class GameScreen extends React.Component {
      )
  }
 }
-
-export default GameScreen;
