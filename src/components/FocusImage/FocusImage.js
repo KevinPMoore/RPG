@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './FocusImage.css';
 
-class FocusImage extends React.Component {
+export default class FocusImage extends React.Component {
 
     render() {
         return(
@@ -10,8 +10,6 @@ class FocusImage extends React.Component {
                     Image placeholder
                 </div>
             </section>
-        )
-    }
-}
-
-export default FocusImage;
+        );
+    };
+};

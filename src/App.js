@@ -36,7 +36,7 @@ class App extends React.Component {
 
           <Route
             exact
-            path={'/gamescreen'}
+            path={'/rabbitstavern'}
             render={(props) => <GameScreen {...props} character={this.state.character}/>}
           />
         </Switch>

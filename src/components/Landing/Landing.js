@@ -22,12 +22,18 @@ export default class Landing extends React.Component {
                 <div
                     className='landing-buttons'
                 >
-                    <button
-                        className='new-game-button'
+                    <Link
+                        to={'/characterselect'}
                     >
-                        New Game
-                    </button>
-                    <Link>
+                        <button
+                            className='new-game-button'
+                        >
+                            New Game
+                        </button>
+                    </Link>
+                    <Link
+                        to={'/rabitstavern'}
+                    >
                         <button
                             className='continue-button'
                         >
